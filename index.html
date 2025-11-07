@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kidz Kardz</title>
-  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Kidz Kardz</h2>
-    <ul>
-      <li><a href="#">🏠 Dashboard</a></li>
-      <li><a href="#">📦 Collection</a></li>
-      <li><a href="#">📈 Trends</a></li>
-      <li><a href="#">💰 Finances</a></li>
-      <li><a href="#">🤖 AI Assistant</a></li>
-      <li><a href="#">💼 Investor</a></li>
-    </ul>
-  </div>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Kidz Kardz</h2>
+      <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#collection">Collection</a>
+        <a href="#trends">Trends</a>
+        <a href="#finances">Finances</a>
+        <a href="#ai">AI Assistant</a>
+        <a href="#investor">Investor</a>
+      </nav>
+    </aside>
 
-  <div class="content">
-    <header>
-      <button id="toggleMenu">☰</button>
-      <h1>Welcome to Kidz Kardz</h1>
-    </header>
-    <section>
-      <p>Your all-in-one sports card tracker and AI assistant — built just for you.</p>
-    </section>
+    <main class="main-content">
+      <header>
+        <button id="toggleMenu" class="menu-btn">☰</button>
+        <h1>Welcome to Kidz Kardz</h1>
+      </header>
+
+      <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Your overview of cards and trends.</p>
+      </section>
+
+      <section id="collection">
+        <h2>Collection</h2>
+        <p>Upload and view your personal card collection.</p>
+      </section>
+
+      <section id="trends">
+        <h2>Trends</h2>
+        <p>Track which cards and players are hot in the market.</p>
+      </section>
+
+      <section id="finances">
+        <h2>Finances</h2>
+        <p>Monitor your spending and profits automatically.</p>
+      </section>
+
+      <section id="ai">
+        <h2>AI Assistant</h2>
+        <button id="aiButton">Chat with AI (Coming Soon)</button>
+      </section>
+
+      <section id="investor">
+        <h2>Investor Panel</h2>
+        <p>Insights for smart collectors and investors.</p>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
